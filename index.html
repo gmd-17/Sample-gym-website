@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gym Website</title>
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"
+              /></svg
+          ></a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="#">Membership Plans</a></li>
+        <li><a href="#">Classes</a></li>
+        <li><a href="#">Trainers</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+      <ul>
+        <li class="logo">
+          <a class="logo-text" href="index.html">Gym Name</a>
+        </li>
+        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+        <li class="hideOnMobile"><a href="aboutus.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="#">Membership Plans</a></li>
+        <li class="hideOnMobile"><a href="#">Classes</a></li>
+        <li class="hideOnMobile"><a href="#">Trainers</a></li>
+        <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="26"
+              viewBox="0 96 960 960"
+              width="26"
+            >
+              <path
+                d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"
+              /></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Your Fitness Journey Starts Here</h1>
+      <p>
+        Join the best gym in town with state-of-the-art equipment and expert
+        trainers.
+      </p>
+      <div class="cta-buttons">
+        <a class="js-get-started" href="#">Get Started</a>
+        <a class="js-view-plans" href="#">View Plans</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2>Why Choose Us?</h2>
+      <div class="feature-grid">
+        <div class="feature-item">
+          <h3>Modern Equipment</h3>
+          <p>High-quality machines for every workout.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Certified Trainers</h3>
+          <p>Professional and experienced trainers to guide you.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Flexible Memberships</h3>
+          <p>Plans tailored for everyone.</p>
+        </div>
+        <div>
+          <img src="images/person.png" />
+          <p>coach1</p>
+        </div>
+        <div>
+          <img src="images/person.png" />
+          <p>coach2</p>
+        </div>
+        <div>
+          <img src="images/person.png" />
+          <p>coach3</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="classes">
+      <h2>Explore Our Classes</h2>
+      <p>Yoga, Spin, Strength Training, and more!</p>
+    </section>
+
+    <section class="testimonials">
+      <h2>What Our Members Say</h2>
+      <p>"I lost 20 lbs and feel amazing!"</p>
+      <p>"Amazing workout environmemt!"</p>
+      <p>"line 3"</p>
+      <p>"line 4"</p>
+      <p>"line 5"</p>
+    </section>
+
+    <section class="plans">
+      <h2>Choose Your Plan</h2>
+      <div class="plan-cards">
+        <div class="card">
+          <h3>Basic</h3>
+          <p>$20/month</p>
+        </div>
+        <div class="card">
+          <h3>Standard</h3>
+          <p>$50/month</p>
+        </div>
+        <div class="card">
+          <h3>Premium</h3>
+          <p>$80/month</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p class="footer-p">&copy; 2025 Gym Name. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
