@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: Arial, sans-serif; */
+    font-family: 'Poppins', sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+/* header {
+    background: white;
+    color: #699c9f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo, .nav-item {
+    padding: 10px;
+}
+
+.logo:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+}
+header nav a {
+    color: #669699;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+} */
+
+nav{
+background-color: white;
+box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+width: 100%;
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+}
+nav li{
+height: 50px;
+}
+nav a{
+height: 100%;
+padding: 0 10px;
+text-decoration: none;
+display: flex;
+align-items: center;
+color: #669699;
+}
+nav a:hover{
+background-color: #f0f0f0;
+text-decoration: underline;
+}
+.logo{
+color: #699c9f;
+margin-right: auto;
+font-size: 24px;
+font-weight: bold;
+}
+
+.logo-text:hover{
+background-color: #f0f0f0;
+text-decoration: none;
+}
+
+.sidebar{
+position: fixed;
+top: 0; 
+right: 0;
+height: 100vh;
+width: 250px;
+background-color: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(12px);
+box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+list-style: none;
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+}
+.sidebar li{
+width: 100%;
+}
+.sidebar a{
+width: 100%;
+}
+.menu-button{
+display: none;
+}
+@media(max-width: 1100px){
+.hideOnMobile{
+    display: none;
+}
+.menu-button{
+    display: block;
+}
+}
+@media(max-width: 400px){
+.sidebar{
+    width: 100%;
+}
+}
+
+
+.hero {
+    background: url('../images/background2.jpg') center/cover no-repeat;
+    height: 80vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 3em;
+    margin: 0.5em 0;
+}
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.hero .cta-buttons {
+    display: flex;
+    gap: 15px;
+}
+.hero .cta-buttons a {
+    padding: 10px 20px;
+    background: #f04e30;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero .cta-buttons a:hover {
+    background: #c03b26;
+}
+.features, .classes, .testimonials, .plans, .trainers {
+    padding: 50px 20px;
+    text-align: center;
+}
+.features h2, .classes h2, .testimonials h2, .plans h2, .trainers h2 {
+    font-size: 2.5em;
+    margin: 0px 0px 20px 0px;
+}
+.features .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.features .feature-grid div {
+    padding: 20px;
+    /* border: 1px solid #ccc;
+    border-radius: 10px; */
+}
+
+/* .feature-item {
+    background-color: #bffafd;
+} */
+
+.plans .plan-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.plans .plan-cards .card {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.card:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.footer-p {
+    margin: 0;
+}
+
+footer a {
+    color: #f04e30;
+    text-decoration: none;
+}
+
+.features {
+    background-color: #c0f6f9;
+}
+
+.classes {
+    background-color: #04191a;
+    color: white;
+
+}
+
+.plans {
+    background-color: #9adae7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
